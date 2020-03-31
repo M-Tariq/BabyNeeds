@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_content_layout"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        >
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:layout_marginStart="10dp"
+                android:text="@string/item_name"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/item_qty_tv"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_tv"
+                android:fontFamily="casual"
+                android:text="Item Qty"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/item_color_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_qty_tv"
+                android:fontFamily="casual"
+                android:text="Item Color"
+                android:layout_marginStart="10dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/item_size_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_color_tv"
+                android:layout_marginStart="10dp"
+                android:fontFamily="casual"
+                android:text="Item Size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/item_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_size_tv"
+                android:fontFamily="casual"
+                android:text="Item Date"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="italic" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/item_date_tv"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                >
+                <Button
+                    android:id="@+id/edt_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="8dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:layout_marginEnd="15dp"
+                    />
+                <Button
+                    android:id="@+id/del_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="8dp"
+                    android:background="@android:drawable/ic_delete"
+                    />
+
+            </TableRow>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
